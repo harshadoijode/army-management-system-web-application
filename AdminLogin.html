@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="Style_button_text.css" type="text/css" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	background-image:url(images/bg.jpg)
+}
+
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.style2 {
+	color: #FFFF00;
+	font-size: 36px;
+}
+.style3 {
+	color: white;
+	font-weight: bold;
+}
+.style4 {color: #FFFF00}
+-->
+</style>
+<script language="javascript">
+function validate(){
+var x=document.forms["form1"]["username"].value;
+var y=document.forms["form1"]["password"].value;
+if(x==""){
+alert(" username cannot be blank");
+return false;
+}else if(y==""){
+alert("password cannot be blank");
+return false;
+
+}else{
+return true;
+}
+
+}
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body>
+<div align="center" class="style1">
+  <p align="left"><a href="home.html">
+    <input name="Input3" type="button" value="home" />
+  </a></p>
+  <p class="style2">Army Database Management System  </p>
+  <p class="style4">&nbsp;</p>
+  <p class="style4">Login Page</p>
+</div>
+<form id="form1" name="form1" method="post" action="logincode.jsp">
+<div style=" background-image:linear-gradient(black,white); margin-left:25%; margin-right:25%; border-radius:20px;">
+  <p>&nbsp;</p>
+  <table width="540" border="0" align="center" cellpadding="5" style="background-image:url(../../../../../Users/HCL/Documents/travelsite/1.png); " >
+    <tr>
+      <td width="210">
+        <div align="right"><span class="style3">Enter Username </span></div></td>
+      <td width="298"><input name="username" type="text" size="40"  /></td>
+    </tr>
+    <tr>
+      <td><div align="right"><span class="style3">Enter Password </span></div></td>
+      <td><input name="password" type="password" size="40" /></td>
+    </tr>
+    <tr>
+      <td><div align="right"></div></td>
+      <td><input type="submit" name="Submit" value="Login" onclick="return validate()"/>
+      <input type="reset" name="Submit2" value="Reset" /></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</div>
+  <div align="center"></div>
+</form>
+<div align="center">
+
+</div>
+</body>
+</html>
